@@ -13,8 +13,7 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
-setlocal iskeyword +=%,.,-,_
-setlocal isident   +=%,.,-,_
+setlocal iskeyword +=%,.,-,_,:,$
 
 syn case ignore
 
@@ -71,11 +70,10 @@ syn match gasRegisterX86Fp	/\<%sp\(([0-7])\)\?\>/
 syn match gasRegisterX86MMX	/\<%x\?mm[0-7]\>/
 
 " symbols and labels
-
-syn match   gasLabel		/[-_$.A-Za-z0-9]\+\s*:/
-syn match   gasSymbol		/\<[^; \t()]\+\>/
-syn match   gasSymbolRef	/\$[-_$.A-Za-z][-_$.A-Za-z0-9]*\>/
-syn match   gasSpecial		/\<[$.]\>/
+syn match   gasLabel		/\<[-_$.A-Za-z0-9]\+\s*:\>/
+syn match   gasSymbol		/\<[^%:;()\t \n]\+\>/
+syn match   gasSymbolRef	/\$[-_$.A-Za-z][-_.A-Za-z0-9]*\>/
+syn keyword gasSpecial		$ .
 
 " constants
 syn region  gasString		start=/"/  end=/"/ skip=/\\"/
@@ -1822,8 +1820,8 @@ hi def link gasBinaryNumber	Constant
 hi def link gasOctalNumber	Constant
 hi def link gasHexNumber	Constant
 hi def link gasDecimalNumber	Constant
-hi def link gasSymbol		Function
-hi def link gasSymbolRef	Special
+hi def link gasSymbol		Statement
+hi def link gasSymbolRef	Function
 hi def link gasSpecial		Special
 hi def link gasLabel		Function
 hi def link gasLocalLabel	Label
