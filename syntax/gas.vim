@@ -46,11 +46,22 @@ syn keyword gasDirectiveMacro	.altmacro .macro .noaltmacro .endm .func .endfunc
 syn keyword gasDirectiveX86	.att_syntax .intel_syntax .att_mnemonic .intel_mnemonic .lcomm
 
 " i*86 register set
-syn keyword gasRegisterX86	%rax %rbx %rcx %rdx %rdi %rsi %rsp %rbp
-syn keyword gasRegisterX86	%eax %ebx %ecx %edx %ax %bx %cx %dx %ah %al %bh %bl %ch %cl %dh %dl
-syn keyword gasRegisterX86	%edi %esi %esp %ebp %di %si %sp %bp %sph %spl %bph %bpl
-syn keyword gasRegisterX86	%cs %ds %es %fs %gs %ss %ip %eip %rip %eflags
-syn match   gasRegisterX86	/\<%r\([8-9]\|1[0-5]\)[lwd]\?\>/
+syn keyword gasRegisterX86	%rax %eax %ax %ah %al
+syn keyword gasRegisterX86	%rbx %ebx %bx %bh %bl
+syn keyword gasRegisterX86	%rcx %ecx %cx %ch %cl
+syn keyword gasRegisterX86	%rdx %edx %dx %dh %dl
+syn keyword gasRegisterX86	%rsi %esi %si %sil
+syn keyword gasRegisterX86	%rdi %edi %di %dil
+syn keyword gasRegisterX86	%rsp %esp %sp %spl
+syn keyword gasRegisterX86	%rbp %ebp %bp %bpl
+syn keyword gasRegisterX86	%r8 %r8d %r8w %r8b
+syn keyword gasRegisterX86	%r9 %r9d %r9w %r9b
+syn keyword gasRegisterX86	%r10 %r10d %r10w %r10b
+syn keyword gasRegisterX86	%r11 %r11d %r11w %r11b
+syn keyword gasRegisterX86	%r12 %r12d %r12w %r12b
+syn keyword gasRegisterX86	%r13 %r13d %r13w %r13b
+syn keyword gasRegisterX86	%r14 %r14d %r14w %r14b
+syn keyword gasRegisterX86	%r15 %r15d %r15w %r15b
 
 " i*86 special registers
 syn match gasRegisterX86Cr	/\<%cr[0-8]\>/
