@@ -520,7 +520,7 @@ syn keyword gasOpcode_286_Base		clts
 syn keyword gasOpcode_8086_Base		cmc
 syn keyword gasOpcode_386_Base		cmp cmpb cmpw cmpl cmpq
 syn keyword gasOpcode_8086_Base		cmpsb
-syn keyword gasOpcode_386_Base		cmpsd
+syn keyword gasOpcode_386_Base		cmpsl
 syn keyword gasOpcode_X64_Base		cmpsq
 syn keyword gasOpcode_8086_Base		cmpsw
 syn keyword gasOpcode_X64_Base		cmpxchg
@@ -649,7 +649,7 @@ syn keyword gasOpcode_386_Base		in
 syn keyword gasOpcode_X64_Base		inc incb incw incl incq
 syn keyword gasOpcode_Base		incbin
 syn keyword gasOpcode_186_Base		insb
-syn keyword gasOpcode_386_Base		insd
+syn keyword gasOpcode_386_Base		insl
 syn keyword gasOpcode_186_Base		insw
 syn keyword gasOpcode_8086_Base		int intb intw intl intq
 syn keyword gasOpcode_386_Base		int01
@@ -685,7 +685,7 @@ syn keyword gasOpcode_286_Base		lmsw
 syn keyword gasOpcode_386_Base		loadall
 syn keyword gasOpcode_286_Base		loadall286
 syn keyword gasOpcode_8086_Base		lodsb
-syn keyword gasOpcode_386_Base		lodsd
+syn keyword gasOpcode_386_Base		lodsl
 syn keyword gasOpcode_X64_Base		lodsq
 syn keyword gasOpcode_8086_Base		lodsw
 syn keyword gasOpcode_X64_Base		loop loopb loopw loopl loopq
@@ -702,7 +702,7 @@ syn keyword gasOpcode_386_Base		mov movb movw movl movq
 syn keyword gasOpcode_X64_SSE		movd
 syn keyword gasOpcode_X64_MMX		movq
 syn keyword gasOpcode_8086_Base		movsb
-syn keyword gasOpcode_386_Base		movsd
+syn keyword gasOpcode_386_Base		movsl
 syn keyword gasOpcode_X64_Base		movsq
 syn keyword gasOpcode_8086_Base		movsw
 syn keyword gasOpcode_X64_Base		movsx
@@ -717,7 +717,7 @@ syn keyword gasOpcode_X64_Base		not
 syn keyword gasOpcode_386_Base		or orb orw orl orq
 syn keyword gasOpcode_386_Base		out
 syn keyword gasOpcode_186_Base		outsb
-syn keyword gasOpcode_386_Base		outsd
+syn keyword gasOpcode_386_Base		outsl
 syn keyword gasOpcode_186_Base		outsw
 syn keyword gasOpcode_PENT_MMX		packssdw packssdwb packssdww packssdwl packssdwq
 syn keyword gasOpcode_PENT_MMX		packsswb packsswbb packsswbw packsswbl packsswbq
@@ -837,7 +837,7 @@ syn keyword gasOpcode_8086_Base		salc
 syn keyword gasOpcode_X64_Base		sar sarb sarw sarl sarq
 syn keyword gasOpcode_386_Base		sbb sbbb sbbw sbbl sbbq
 syn keyword gasOpcode_8086_Base		scasb
-syn keyword gasOpcode_386_Base		scasd
+syn keyword gasOpcode_386_Base		scasl
 syn keyword gasOpcode_X64_Base		scasq
 syn keyword gasOpcode_8086_Base		scasw
 syn keyword gasOpcode_X64_Base		sfence
@@ -858,7 +858,7 @@ syn keyword gasOpcode_8086_Base		std
 syn keyword gasOpcode_X64_Base		stgi
 syn keyword gasOpcode_8086_Base		sti
 syn keyword gasOpcode_8086_Base		stosb
-syn keyword gasOpcode_386_Base		stosd stosl
+syn keyword gasOpcode_386_Base		stosl
 syn keyword gasOpcode_X64_Base		stosq
 syn keyword gasOpcode_8086_Base		stosw
 syn keyword gasOpcode_X64_Base		str
