@@ -2,7 +2,7 @@
 " Language:	GNU as (AT&T) assembler for X86
 " Maintainer:	Rene Koecher <shirk@bitspin.org>
 " Maintainer:	Parham Alvani <parham.alvani@gmail.com>
-" Last Change:	2015 Jan 29
+" Last Change:	2015 Feb 01
 " Version:	0.9
 " Remark:	Intel compatible instructions only (for now)
 " License:      BSD (3 clause), see LICENSE
@@ -19,7 +19,7 @@ setlocal iskeyword +=%,.,-,_,:,$
 syn case ignore
 
 " directives
-syn keyword gasDirective	.abort .ABORT .align .balignw .balignl
+syn keyword gasDirective	.abort .align .balignw .balignl
 syn keyword gasDirective	.cfi_startproc .cfi_sections .cfi_endproc .cfi_personality
 syn keyword gasDirective	.cfi_lsda .cfi_def_cfa .cfi_def_cfa_register .cfi_def_cfa_offset
 syn keyword gasDirective	.cfi_adjust_cfa_offset .cfi_offset .cfi_rel_offset .cfi_register
