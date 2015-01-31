@@ -18,7 +18,7 @@ Rene Kocher. so i did not change anything and add some new features and fix some
 
 # What does it look like?
 
-![screenshot here..](https://drive.google.com/open?id=0B33KzMHyLoH2Y0xUemZkcHA2RWc&authuser=0)
+![screenshot here..](http://www.googledrive.com/host/0B33KzMHyLoH2eVNHWFJZdmthOVk/vim-gas-screenshotjpg)
 
 # Supported instructions a per version 0.6: 
 
