@@ -1,7 +1,9 @@
 VIM-GAS
 =========
 
-This vim bundle adds advanced syntax highlighting for GNU as (AT&T) for *86 CPUs.
+# Introduction
+
+This vim bundle adds advanced syntax highlighting for GNU as (AT&T) for x86 CPUs.
 
 This file defines a (almost) complete syntax for GNU as assembler. 
 
@@ -10,6 +12,9 @@ common assembler.
 
 For now the basic as directives as well as the Intel / AMD instruction sets are included. 
 Opcodes supporting a size suffix are recognized plain as well as suffixed with b/w/l/q. 
+
+Because of some issues in vim-gas, i decided to develop some new features base on old project from
+Rene Kocher. so i did not change anything and add some new features and fix some errors.
 
 # What does it look like?
 
