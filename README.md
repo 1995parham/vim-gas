@@ -18,7 +18,7 @@ Rene Kocher. so i did not change anything and add some new features and fix some
 
 # What does it look like?
 
-![screenshot here..](http://skitch-img.s3.amazonaws.com/20091121-q88xtxujgi62cby8f8cn25kxmp.png)
+![screenshot here..](https://drive.google.com/open?id=0B33KzMHyLoH2Y0xUemZkcHA2RWc&authuser=0)
 
 # Supported instructions a per version 0.6: 
 
