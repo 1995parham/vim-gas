@@ -1,4 +1,5 @@
-# VIM-GAS
+VIM-GAS
+=========
 
 This vim bundle adds advanced syntax highlighting for GNU as (AT&T) for *86 CPUs.
 
@@ -10,11 +11,11 @@ common assembler.
 For now the basic as directives as well as the Intel / AMD instruction sets are included. 
 Opcodes supporting a size suffix are recognized plain as well as suffixed with b/w/l/q. 
 
-## What does it look like?
+# What does it look like?
 
 ![screenshot here..](http://skitch-img.s3.amazonaws.com/20091121-q88xtxujgi62cby8f8cn25kxmp.png)
 
-## Supported instructions a per version 0.6: 
+# Supported instructions a per version 0.6: 
 
 - X86 common instruction set (8086 - 686) 
 - Katmai Streaming SIMD instructions (SSE -- a.k.a. KNI, XMM, MMX2) 
@@ -53,7 +54,7 @@ You can set different highlighting for each set listed above by adding a line li
   hi def link gasOpcodeX86_PENT_SSE  <some_highlighting> 
 ```
 
-## per-file opcode enable / disable 
+# per-file opcode enable / disable 
 
 Since version 0.6 it is possible to disable sets of opcodes by either CPU they where introduced in or by their extension name. 
 This is done by setting a special variable recognized by gas.vim to the list of disabled opcodes. 
@@ -85,11 +86,11 @@ recognized extension groups:
 I hope this syntax file will be useful to other people 
   \- but don't blame me if it doesn't suit your needs. 
  
-## Installation
+# Installation
 
 This syntax file can either be installed manually or by using pathogen.
 
-### Manual Installation
+## Manual Installation
 
 Download gas.vim and copy the file to .vim/syntax/ in your home folder. 
 Add this line to the end of your file: 
@@ -110,11 +111,11 @@ Add this line to the end of your file:
 
         $ mkdir -p ~/.vim/bundle
         $ cd ~/.vim/bundle
-        $ git clone https://github.com/Shirk/vim-gas
+        $ git clone https://github.com/1995parham/vim-gas
 
 - OR use git submodules:
 
-        $ git submodule add https://github.com/Shirk/vim-gas.git bundle/vim-gas
+        $ git submodule add https://github.com/1995parham/vim-gas.git bundle/vim-gas
         $ git submodule init
 
 ## License ##
