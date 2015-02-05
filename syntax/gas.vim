@@ -68,7 +68,7 @@ syn keyword gasRegisterX86	%rip %eip %ip
 syn match gasRegisterX86Cr	/\<%cr[0-8]\>/
 syn match gasRegisterX86Dr	/\<%dr[0-8]\>/
 syn match gasRegisterX86Tr	/\<%tr[0-8]\>/
-syn match gasRegisterX86Fp	/\<%st\(([0-7])\)\>/
+syn match gasRegisterX86Fp	/\<%st([0-7])/
 syn match gasRegisterX86MMX	/\<%x\?mm[0-7]\>/
 
 " symbols and labels
@@ -578,7 +578,7 @@ syn keyword gasopcode_8086_base		ficom ficomb ficomw ficoml ficomq
 syn keyword gasopcode_8086_base		ficomp ficompb ficompw ficompl ficompq
 syn keyword gasopcode_8086_base		fidiv fidivb fidivw fidivl fidivq
 syn keyword gasopcode_8086_base		fidivr fidivrb fidivrw fidivrl fidivrq
-syn keyword gasopcode_8086_base		fild fildb fildw fildl fildq
+syn keyword gasopcode_8086_base		fild filds fildl
 syn keyword gasopcode_8086_base		fimul fimulb fimulw fimull fimulq
 syn keyword gasopcode_8086_base		fincstp
 syn keyword gasopcode_8086_base		finit
@@ -1809,6 +1809,7 @@ syn keyword gasOpcode_AMD_SSE4A		movntss movntssb movntssw movntssl movntssq
 " links
 hi def link gasDirectiveX86	gasDirective
 hi def link gasRegisterX86	gasRegister
+hi def link gasRegisterX86Fp	gasRegister
 hi def link gasRegisterX86Cr	gasRegister
 hi def link gasRegisterX86Dr	gasRegister
 hi def link gasRegisterX86MMX	gasRegister
