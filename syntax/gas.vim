@@ -2,7 +2,7 @@
 " Language:	GNU as (AT&T) assembler for X86
 " Maintainer:	Rene Koecher <shirk@bitspin.org>
 " Maintainer:	Parham Alvani <parham.alvani@gmail.com>
-" Last Change:	2015 Feb 01
+" Last Change:	2015 Feb 05
 " Version:	0.9
 " Remark:	Intel compatible instructions only (for now)
 " License:      BSD (3 clause), see LICENSE
@@ -68,7 +68,7 @@ syn keyword gasRegisterX86	%rip %eip %ip
 syn match gasRegisterX86Cr	/\<%cr[0-8]\>/
 syn match gasRegisterX86Dr	/\<%dr[0-8]\>/
 syn match gasRegisterX86Tr	/\<%tr[0-8]\>/
-syn match gasRegisterX86Fp	/\<%sp\(([0-7])\)\?\>/
+syn match gasRegisterX86Fp	/\<%st\(([0-7])\)\>/
 syn match gasRegisterX86MMX	/\<%x\?mm[0-7]\>/
 
 " symbols and labels
@@ -582,7 +582,7 @@ syn keyword gasopcode_8086_base		fild fildb fildw fildl fildq
 syn keyword gasopcode_8086_base		fimul fimulb fimulw fimull fimulq
 syn keyword gasopcode_8086_base		fincstp
 syn keyword gasopcode_8086_base		finit
-syn keyword gasopcode_8086_base		fist fistb fistw fistl fistq
+syn keyword gasopcode_8086_base		fist fists fistl
 syn keyword gasopcode_8086_base		fistp fistpb fistpw fistpl fistpq
 syn keyword gasopcode_prescott_base	fisttp fisttpb fisttpw fisttpl fisttpq
 syn keyword gasopcode_8086_base		fisub fisubb fisubw fisubl fisubq
@@ -620,10 +620,10 @@ syn keyword gasopcode_286_base		fsetpm
 syn keyword gasopcode_386_base		fsin
 syn keyword gasopcode_386_base		fsincos
 syn keyword gasopcode_8086_base		fsqrt
-syn keyword gasopcode_8086_base		fstl fsts
+syn keyword gasopcode_8086_base		fst fstl fsts
 syn keyword gasopcode_8086_base		fstcw fstcwb fstcww fstcwl fstcwq
 syn keyword gasopcode_8086_base		fstenv fstenvb fstenvw fstenvl fstenvq
-syn keyword gasopcode_8086_base		fstp
+syn keyword gasopcode_8086_base		fstps fstpl
 syn keyword gasopcode_286_base		fstsw
 syn keyword gasopcode_8086_base		fsub
 syn keyword gasopcode_8086_base		fsubp
