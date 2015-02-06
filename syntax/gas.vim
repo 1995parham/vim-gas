@@ -2,7 +2,7 @@
 " Language:	GNU as (AT&T) assembler for X86
 " Maintainer:	Rene Koecher <shirk@bitspin.org>
 " Maintainer:	Parham Alvani <parham.alvani@gmail.com>
-" Last Change:	2015 Feb 05
+" Last Change:	2015 Feb 06
 " Version:	0.9
 " Remark:	Intel compatible instructions only (for now)
 " License:      BSD (3 clause), see LICENSE
@@ -1805,6 +1805,8 @@ syn keyword gasOpcode_AMD_SSE4A		insertq
 syn keyword gasOpcode_AMD_SSE4A		movntsd movntsdb movntsdw movntsdl movntsdq
 syn keyword gasOpcode_AMD_SSE4A		movntss movntssb movntssw movntssl movntssq
 
+"-- Section: Intel IvyBridge TRNG Instructions
+syn keyword gasOpcode_IVYBRIDGE_TRNG	rdrand
 
 " links
 hi def link gasDirectiveX86	gasDirective
@@ -1894,6 +1896,7 @@ call <SID>MapOpcode('gasOpcode_X64_SSE41'      , 'x64'        , 'sse4.1')
 call <SID>MapOpcode('gasOpcode_X64_SSE42'      , 'x64'        , 'sse4.2')
 call <SID>MapOpcode('gasOpcode_X64_VMX'        , 'x64'        , 'vmx')
 call <SID>MapOpcode('gasOpcode_X86_64_Base'    , 'x64'        , 'base')
+call <SID>MapOpcode('gasOpcode_IVYBRIDGE_TRNG' , 'ivybridge'  , 'trng')
 
 " support CPP preprocessor tags
 syn case match
