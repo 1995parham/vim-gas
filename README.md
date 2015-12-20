@@ -55,10 +55,10 @@ but don't blame me if it doesn't suit your needs.
 - AMD XOP, FMA4 and CVT16 instructions (SSE5)
 - Systematic names for the hinting nop instructions
 
-You can set different highlighting for each set listed above by adding a line like this to you .vimrc: 
+You can set different highlighting for each set listed above by adding a line like this to you .vimrc:
 
 ```vim
-hi def link gasOpcodeX86_PENT_SSE  <some_highlighting> 
+hi def link gasOpcodeX86_PENT_SSE  <some_highlighting>
 ```
 
 ## per-file opcode enable / disable
@@ -125,7 +125,9 @@ Add this line to the end of your file:
 ```
 
 ### Plugin Installation
+
 #### [vim-plug](https://github.com/junegunn/vim-plug)
+
 ```vim
 Plug '1995parham/vim-gas'
 ```
